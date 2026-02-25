@@ -1,0 +1,150 @@
+.certifications-page {
+  min-height: 100vh;
+  padding: 120px 40px 80px;
+}
+
+.certifications-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f5f5dc;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: rgba(245, 245, 220, 0.7);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.certification-card {
+  background: rgba(20, 20, 30, 0.6);
+  border: 2px solid rgba(245, 245, 220, 0.2);
+  border-radius: 20px;
+  padding: 35px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.certification-card:hover {
+  border-color: #f5f5dc;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(245, 245, 220, 0.2);
+}
+
+.cert-badge {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background: rgba(245, 245, 220, 0.1);
+  border: 2px solid #f5f5dc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5dc;
+}
+
+.cert-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f5f5dc;
+  margin-bottom: 10px;
+}
+
+.cert-issuer {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(245, 245, 220, 0.8);
+  margin-bottom: 8px;
+}
+
+.cert-date {
+  font-size: 0.9rem;
+  color: rgba(245, 245, 220, 0.6);
+  margin-bottom: 15px;
+}
+
+.cert-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(245, 245, 220, 0.7);
+}
+
+.placeholder-note {
+  background: rgba(245, 245, 220, 0.1);
+  border: 1px solid rgba(245, 245, 220, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+
+.placeholder-note p {
+  font-size: 1rem;
+  color: rgba(245, 245, 220, 0.7);
+  line-height: 1.6;
+}
+
+.placeholder-note strong {
+  color: #f5f5dc;
+}
+
+@media (max-width: 768px) {
+  .certifications-page {
+    padding: 100px 20px 60px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .certification-card {
+    padding: 30px 25px;
+  }
+
+  .cert-name {
+    font-size: 1.3rem;
+  }
+}
+
+
+.cert-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgba(245, 245, 220, 0.1);
+  border: 1px solid #f5f5dc;
+  border-radius: 20px;
+  color: #f5f5dc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cert-link:hover {
+  background: rgba(245, 245, 220, 0.2);
+  transform: translateY(-2px);
+}

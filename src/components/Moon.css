@@ -1,0 +1,101 @@
+.moon-flip-container {
+  width: 75px;
+  height: 75px;
+  perspective: 1500px;
+  cursor: pointer;
+  position: relative;
+}
+
+.moon-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.moon-flip-front,
+.moon-flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.moon-flip-front {
+  transform: rotateY(0deg) translateZ(1px);
+  background: transparent;
+}
+
+.moon-flip-back {
+  transform: rotateY(180deg) translateZ(1px);
+  background: rgba(20, 20, 30, 0.98);
+  border: 2px solid #f5f5dc;
+  flex-direction: column;
+  padding: 8px;
+  box-shadow: 0 0 20px rgba(245, 245, 220, 0.4);
+}
+
+.quote-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #f5f5dc;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+
+.quote-author {
+  font-size: 0.5rem;
+  color: rgba(245, 245, 220, 0.856);
+  /* font-style: italic; */
+}
+
+.flat-moon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #f5f5dc;
+  position: relative;
+  box-shadow: 0 0 15px rgba(245, 245, 220, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.moon-flip-container:hover .flat-moon {
+  box-shadow: 0 0 25px rgba(245, 245, 220, 0.6);
+}
+
+.flat-moon .crater {
+  position: absolute;
+  border-radius: 50%;
+  background: #d4d4b8;
+}
+
+.flat-moon .crater-1 { width: 14px; height: 14px; top: 22%; left: 18%; }
+.flat-moon .crater-2 { width: 10px; height: 10px; top: 45%; right: 22%; }
+.flat-moon .crater-3 { width: 11px; height: 11px; bottom: 25%; left: 32%; }
+.flat-moon .crater-4 { width: 7px; height: 7px; top: 58%; right: 32%; }
+.flat-moon .crater-5 { width: 9px; height: 9px; top: 15%; right: 28%; }
+.flat-moon .crater-6 { width: 6px; height: 6px; top: 38%; left: 42%; }
+.flat-moon .crater-7 { width: 12px; height: 12px; bottom: 18%; right: 35%; }
+.flat-moon .crater-8 { width: 5px; height: 5px; top: 68%; left: 22%; }
+.flat-moon .crater-9 { width: 8px; height: 8px; top: 32%; left: 60%; }
+.flat-moon .crater-10 { width: 5px; height: 5px; bottom: 35%; right: 18%; }
+
+.flat-moon .crater-small {
+  background: #c8c8b0;
+}
+
+.flat-moon .crater-11 { width: 3px; height: 3px; top: 50%; left: 28%; }
+.flat-moon .crater-12 { width: 4px; height: 4px; top: 28%; right: 48%; }
+.flat-moon .crater-13 { width: 3px; height: 3px; bottom: 40%; left: 55%; }
