@@ -76,13 +76,14 @@
 
 .moon-initials {
   font-size: 1.8rem;
-  font-weight: 700;
-  color: #2a2a2a;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 0.55);
   z-index: 10;
   letter-spacing: -0.08em;
   font-family: 'Georgia', 'Garamond', serif;
   line-height: 1;
-  /* 
+  text-shadow: none;
+  /*
   FONT OPTIONS TO TRY:
   - 'Georgia', 'Garamond', serif;  // Elegant/Classic
   - 'Segoe UI', '-apple-system', 'system-ui', sans-serif;  // Modern/Minimal
