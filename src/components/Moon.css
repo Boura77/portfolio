@@ -69,6 +69,26 @@
   position: relative;
   box-shadow: 0 0 15px rgba(245, 245, 220, 0.4);
   transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moon-initials {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  z-index: 10;
+  letter-spacing: -0.08em;
+  font-family: 'Georgia', 'Garamond', serif;
+  line-height: 1;
+  /* 
+  FONT OPTIONS TO TRY:
+  - 'Georgia', 'Garamond', serif;  // Elegant/Classic
+  - 'Segoe UI', '-apple-system', 'system-ui', sans-serif;  // Modern/Minimal
+  - 'Trebuchet MS', 'Lucida Grande', sans-serif;  // Geometric
+  - 'Courier New', monospace;  // Technical
+  */
 }
 
 .moon-flip-container:hover .flat-moon {
@@ -78,7 +98,7 @@
 .flat-moon .crater {
   position: absolute;
   border-radius: 50%;
-  background: #d4d4b8;
+  background: #e8e8d8;
 }
 
 .flat-moon .crater-1 { width: 14px; height: 14px; top: 22%; left: 18%; }
@@ -93,7 +113,7 @@
 .flat-moon .crater-10 { width: 5px; height: 5px; bottom: 35%; right: 18%; }
 
 .flat-moon .crater-small {
-  background: #c8c8b0;
+  background: #ececdc;
 }
 
 .flat-moon .crater-11 { width: 3px; height: 3px; top: 50%; left: 28%; }

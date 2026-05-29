@@ -21,7 +21,6 @@ const About: React.FC = () => {
       { name: '.NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',needsWhiteBg: false },
       { name: 'Pandas', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',needsWhiteBg: true },
       { name: 'Selenium', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg',needsWhiteBg: false },
-      { name: 'BeautifulSoup', icon: 'https://scribbleghost.net/wp-content/uploads/2020/07/Beautiful-Soup-4-Pot-1.svg',needsWhiteBg: false }, 
     ],
     databases: [
       { name: 'MSSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',needsWhiteBg: false },

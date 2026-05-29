@@ -7,7 +7,6 @@ interface Project {
   description: string;
   technologies: string[];
   githubUrl: string;
-  liveDemoUrl?: string;
 }
 
 const Projects: React.FC = () => {
@@ -32,8 +31,7 @@ const Projects: React.FC = () => {
         'CoinGecko API',
         'Telegram API'
       ],
-      githubUrl: 'https://github.com/YOUR_USERNAME/btc-whale-tracker', // Replace with actual URL
-      liveDemoUrl: 'https://your-demo-url.com', // Replace or remove if no demo
+      githubUrl: 'https://github.com/Boura77/btc-whale-tracker', // Replace with actual URL
     },
     {
       id: 2,
@@ -47,8 +45,7 @@ const Projects: React.FC = () => {
         'Streamlit',
         'SQLite'
       ],
-      githubUrl: 'https://github.com/YOUR_USERNAME/football-prediction', // Replace with actual URL
-      liveDemoUrl: 'https://your-demo-url.com', // Replace or remove if no demo
+      githubUrl: 'https://github.com/Boura77/Football-Match-Prediction-System-RAG-AI', // Replace with actual URL
     },
     {
       id: 3,
@@ -58,8 +55,7 @@ const Projects: React.FC = () => {
         'Python',
         'Streamlit'
       ],
-      githubUrl: 'https://github.com/YOUR_USERNAME/custom-wordle', // Replace with actual URL
-      liveDemoUrl: 'https://your-demo-url.com', // Replace or remove if no demo
+      githubUrl: 'https://github.com/Boura77/my-wordle', // Replace with actual URL
     },
     {
       id: 4,
@@ -72,7 +68,7 @@ const Projects: React.FC = () => {
         'Insomnia',
         'Excel (openpyxl/pandas)'
       ],
-      githubUrl: 'https://github.com/YOUR_USERNAME/uae-fnb-scraper', // Replace with actual URL
+      githubUrl: 'https://github.com/Boura77/Webscraping-FNB-companies-in-UAE', // Replace with actual URL
     },
   ];
 
@@ -112,21 +108,6 @@ const Projects: React.FC = () => {
                   GitHub
                 </a>
                 
-                {project.liveDemoUrl && (
-                  <a 
-                    href={project.liveDemoUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link demo-link"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                    Live Demo
-                  </a>
-                )}
               </div>
             </div>
           ))}

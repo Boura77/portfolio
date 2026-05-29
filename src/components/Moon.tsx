@@ -24,6 +24,7 @@ const Moon: React.FC = () => {
       >
         <div className="moon-flip-front">
           <div className="flat-moon">
+            <div className="moon-initials">NB</div>
             <div className="crater crater-1"></div>
             <div className="crater crater-2"></div>
             <div className="crater crater-3"></div>
