@@ -6,7 +6,7 @@ const Resume: React.FC = () => {
     <div className="resume-page">
       <div className="resume-images">
           <img
-            src= "resume-pages\(NikhilSinghBoura)RESUME_1-1.png"
+            src= "resume-pages\Resume_Nikhil_page1.png"
             alt="Resume"
             className="resume-page-image"
             loading="lazy"
@@ -15,8 +15,8 @@ const Resume: React.FC = () => {
 
       <div className="download-section">
         <a 
-          href="/(NikhilSinghBoura)RESUME_1.pdf" 
-          download="(NikhilSinghBoura)RESUME_1.pdf"
+          href="/Resume_Nikhil.pdf" 
+          download="(NikhilSinghBoura)RESUME.pdf"
           className="download-button"
         >
           <svg 
